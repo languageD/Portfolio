@@ -7,6 +7,7 @@
   overflow: hidden;
   background-color: black;
   justify-content: center;
+  position: fixed;
 
 }
 
@@ -30,16 +31,44 @@
   }
 }
 
-.home_info {
+.img_wrapper h1{
   color: white;
   z-index: 100;
   position: fixed;
-  font-size: 2rem; 
-  top: 25rem;
+  font-size: 4rem; 
   font-family: 'Ubuntu', sans-serif; 
   margin: 0 5rem;
-
+  top: 25rem;
+  text-shadow: 3px 3px 3px black;
+  animation: animaBanner 1s 0.5s forwards;
+  opacity: 0;
 } 
+.img_wrapper p {
+  color: white;
+  top: 36rem;
+  z-index: 100;
+  position: fixed;
+  opacity: 1;
+  font-size: 1.8rem;
+  font-family: 'Ubuntu', sans-serif; 
+  margin: 0 5.5rem;
+  animation: animaBanner 1s 0.5s forwards;
+  opacity: 0;
+  text-shadow: 1px 2px 3px black;
+
+
+}
+
+
+@keyframes animaBanner {
+  0% {
+    transform: translateY(10rem) rotateY(-30deg);
+  }
+  100% {
+    transform: translateY(0) rotateY(0);
+    opacity: 1;
+  }
+}
 
 
 
