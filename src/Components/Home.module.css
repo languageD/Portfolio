@@ -82,7 +82,18 @@
   }
 }
 
-@media (max-width: 500px){
+@media (max-width: 1000px){
+  .img_wrapper{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
   
   .info{
     top: 15rem;
@@ -93,17 +104,6 @@
     margin-top: 35rem;
     
   }
-}
-@media (max-width: 1000px){
-  .info{
-    top: 15rem;
-  }
-  .info p {
-    
-    margin-top: 20rem;
-    
-  }
-
 }
 
 
