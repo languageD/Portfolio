@@ -5,18 +5,16 @@ import bgImage from '../img/bg.jpg'
 
 function Home(){
   return(
-    <div className={styles.img_wrapper}>
-        <div className={styles.info}>
-            <h1>Full-stack developer & designer</h1>
-            <p>Victor Gabriel</p>
-        </div>
-      
-      
-      
-      <img src={bgImage } alt="background" />
-      
-      
-    </div>
+    <header>
+      <div className={styles.img_wrapper}>
+        <img src={bgImage } alt="background" />
+      </div>
+      <div className={styles.info}>
+        <h1>Full-stack developer & designer</h1>
+        <p>Victor Gabriel</p>
+      </div>
+
+    </header>
   )
 }
 
