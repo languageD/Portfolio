@@ -1,0 +1,14 @@
+.Side_hamburguer{
+  height: 2rem;
+  width: 2rem;
+  z-index: 100;
+  position: fixed;
+  right: 2rem;
+  top: 2rem;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  cursor: pointer;
+  /* background-color: white; */
+}
+
