@@ -1,8 +1,7 @@
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 
-import Home from './Components/Home'
+import Home from './pages/Home'
 import Container from './Components/Container'
-import SideHamburger from './Components/SideHamburger'
 import Footer from './Components/footer'
 
 
