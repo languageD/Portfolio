@@ -19,14 +19,14 @@
   z-index: 100;
   box-shadow: 3px 2px 1px black;
 }
-.show-bar #line1 {
+.show_bar #line1 {
   transform: rotate(45deg) translate(0.2rem, +0.3rem);
   transition: 1s;
 }
-.show-bar #line2 {
+.show_bar #line2 {
   opacity: 0;
 }
-.show-bar #line3 {
+.show_bar #line3 {
   transform: rotate(-45deg) translate(0.2rem, -0.5rem);
   transition: 1s;
 }
