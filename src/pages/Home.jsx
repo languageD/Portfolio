@@ -21,7 +21,7 @@ function Home(){
           setClass('show_bar')
           console.log('foi')
         }}>  
-          <SideHamburger props={setClass}/>
+          <SideHamburger toggle={Class}/>
         </div>
 
       </header>

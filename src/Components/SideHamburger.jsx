@@ -1,12 +1,13 @@
 import React from "react";
 import styles from './SideHamburger.module.css'
 
+
 function SideHamburger(props){
   return(
-    <div className={`${styles.Side_hamburguer} ${styles[props.show_bar]}`}>
-      <div className={styles.lines} id="line1"></div>
-      <div className={styles.lines} id="line2"></div>
-      <div className={styles.lines} id="line3"></div>
+    <div className={`${styles.Side_hamburguer} ${styles[props.toggle]}`}>
+      <div className={styles.lines} id={styles['line1']}></div>
+      <div className={styles.lines} id={styles['line2']}></div>
+      <div className={styles.lines} id={styles['line3']}></div>
     </div>
   )
 
