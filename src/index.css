@@ -2,7 +2,25 @@
 * {
   margin: 0;
   padding: 0;
-  min-width: 320px;
-  min-height: 100vh;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
 }
 
+html,
+body,
+#root {
+  background-color: #efefef;
+  height: 100vh;
+
+  overflow-y: hidden;
+}
+/* Isso esta colocando flex em todas as listas se precisar mudar depois pô  */
+ul {
+  display: flex;
+  
+}
+li {
+  margin-left: 1rem;
+  text-decoration: none;
+  list-style: none;
+}

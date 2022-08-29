@@ -1,9 +1,12 @@
 .container{
   height: 10%;
-  width: 10%;
   display: flex;
-  position: absolute;
-  justify-content: center;
-  flex-direction: column;
+  position: fixed;
+  
  
+}
+
+.container li{
+  color: white;
+  font-size: 2rem;
 }

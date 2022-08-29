@@ -3,9 +3,12 @@ import styles from './Footer.module.css'
 
 function Footer(){
   return(
-    <div className={styles.container}>
-      <p>&copy; victor gabriel</p>
-    </div>
+    <footer className={styles.container}>
+      <ul>
+        <li>&copy; victor gabriel</li>
+      </ul>
+      
+    </footer>
   )
 
 }
