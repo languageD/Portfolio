@@ -3,10 +3,10 @@ import styles from './SideBar.module.css'
 import {FaInstagram, FaGithub, FaLinkedinIn } from 'react-icons/fa'
 
 
-function SideBar(){
+function SideBar(props ){
   return(
-    <div className={styles.Container}>
-      <nav>
+    <div className={`${styles.Container}  ${styles[props.toggle]}`}>
+      <nav  id={styles['toggle']}>
         <div className={styles.sideItem}>
           <ul>
             <a href="#" className={styles.itens}>Home</a>

@@ -30,7 +30,7 @@ function Home(){
         }}>  
           <SideHamburger toggle={Class}/>
         </div>
-          <SideBar />
+          <SideBar toggle={Class}/>
 
       </header>
     
