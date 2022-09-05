@@ -2,10 +2,12 @@ import React, { useState } from "react";
 import styles from './Home.module.css'
 import bgImage from '../img/bg.jpg'
 import SideHamburger from '../Components/SideHamburger'
+import SideBar from "../Components/SideBar";
 
 
 function Home(){
   const [Class, setClass] = useState('')
+  
 
   return(
     
@@ -18,10 +20,16 @@ function Home(){
           <p>Victor Gabriel </p>
         </div>
         <div onClick={()=>{
-          setClass('show_bar')
-          console.log('foi')
+          if(Class){
+           setClass('')
+            
+          }else{
+            setClass('show_bar')
+            
+          }
         }}>  
           <SideHamburger toggle={Class}/>
+          <SideBar />
         </div>
 
       </header>
