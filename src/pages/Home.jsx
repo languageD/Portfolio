@@ -29,8 +29,8 @@ function Home(){
           }
         }}>  
           <SideHamburger toggle={Class}/>
-          <SideBar />
         </div>
+          <SideBar />
 
       </header>
     

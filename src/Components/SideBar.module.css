@@ -1,7 +1,48 @@
+*{
+  text-decoration: none;
+}
+
 .Container{
   height: 100vh;
   width: 20rem;
   position: relative;
-  top: 0;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
   background-color: white;
+}
+
+nav{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sideItem{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 90%;
+}
+
+.itens{
+  display: flex;
+  margin-top: 4rem;
+  font-size: 1.6rem;
+  color: rgb(21, 25, 32);
+  transition: 1s;
+
+}
+
+.itens:hover{
+  color: rgb(134, 132, 132)
+}
+
+.icons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10%;
 }

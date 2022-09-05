@@ -1,5 +1,7 @@
 import React from "react";
 import styles from './SideBar.module.css'
+import {FaInstagram, FaGithub, FaLinkedinIn } from 'react-icons/fa'
+
 
 function SideBar(){
   return(
@@ -7,14 +9,20 @@ function SideBar(){
       <nav>
         <div className={styles.sideItem}>
           <ul>
-            <p>Home</p>
+            <a href="#" className={styles.itens}>Home</a>
           </ul>
           <ul>
-            <p>Projetos</p>
+            <a href="#" className={styles.itens}>Projetos</a>
           </ul>
           <ul>
-            <p>Contato</p>
+            <a href="#" className={styles.itens}>Contato</a>
           </ul>
+        </div>
+
+        <div className={styles.icons}>
+          <a href="#"><FaInstagram/>Instagram</a>
+          <a href="#"><FaGithub/>Github</a>
+          <a href="#"><FaLinkedinIn/>Linkedin</a>
         </div>
       </nav>
     </div>
