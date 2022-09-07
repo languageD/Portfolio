@@ -20,9 +20,9 @@ function SideBar(props ){
         </div>
 
         <div className={styles.icons}>
-          <a href="#"><FaInstagram/>Instagram</a>
-          <a href="#"><FaGithub/>Github</a>
-          <a href="#"><FaLinkedinIn/>Linkedin</a>
+          <a href="#"><FaInstagram/></a>
+          <a href="#"><FaGithub/></a>
+          <a href="#"><FaLinkedinIn/></a>
         </div>
       </nav>
     </div>

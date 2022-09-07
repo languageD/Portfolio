@@ -49,8 +49,19 @@ nav{
   justify-content: center;
   align-items: center;
   height: 10%;
+  width: 100%;
+  
 }
 
-.icons{
-
+.icons a {
+  display: flex;
+  margin: 2rem;
+  font-size: 2.1rem;
+  color: rgb(21, 25, 32);
+  
+  
+}
+.icons a :hover{
+  color: rgb(134, 132, 132);
+  transition: 1s;
 }
