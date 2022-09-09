@@ -1,12 +1,14 @@
 import React from "react";
 import styles from './SideBar.module.css'
 import {FaInstagram, FaGithub, FaLinkedinIn } from 'react-icons/fa'
+import SideHamburger from "./SideHamburger";
 
 
 function SideBar(props ){
   return(
     <div className={`${styles[props.toggle]}`}>
      <div className={styles.Container}>
+        
         <nav>
           <div className={styles.sideItem}>
             <ul>
