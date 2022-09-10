@@ -23,9 +23,9 @@ function SideBar(props ){
           </div>
 
           <div className={styles.icons}>
-            <a href="#"><FaInstagram/></a>
-            <a href="#"><FaGithub/></a>
-            <a href="#"><FaLinkedinIn/></a>
+            <a href="https://www.instagram.com/victorgrs11/" target='_blank'><FaInstagram/></a>
+            <a href="https://github.com/languageD" target='_blank'><FaGithub/></a>
+            <a href="https://www.linkedin.com/in/victor-gabriel-dos-reis-silva-40473b21b/" target='_blank'><FaLinkedinIn/></a>
           </div>
         </nav>
       </div>
