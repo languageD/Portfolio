@@ -28,6 +28,7 @@ nav{
 .sideItem{
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: center;
   height: 90%;
 }
@@ -43,7 +44,7 @@ nav{
 }
 
 .itens a:hover{
-  color: rgb(134, 132, 132)
+  color: #552564
 }
 
 
@@ -66,7 +67,7 @@ nav{
   
 }
 .icons a :hover{
-  color: rgb(134, 132, 132);
+  color: #552564;
   transition: 1s;
 }
 

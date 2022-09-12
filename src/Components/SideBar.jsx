@@ -15,6 +15,9 @@ function SideBar(props ){
               <li className={styles.itens}><Link to='/'>Home</Link></li>
             </ul>
             <ul>
+              <li  className={styles.itens}><Link to='/Conhecimento'>Conhecimento</Link></li>
+            </ul>
+            <ul>
               <li  className={styles.itens}><Link to='/projetos'>Projetos</Link> </li>
             </ul>
             <ul>
