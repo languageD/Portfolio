@@ -32,18 +32,21 @@ nav{
   height: 90%;
 }
 
-.itens{
+.itens a{
   display: flex;
   margin-top: 5rem;
+  text-decoration: none;
   font-size: 2rem;
   color: rgb(21, 25, 32);
   transition: 1s;
 
 }
 
-.itens:hover{
+.itens a:hover{
   color: rgb(134, 132, 132)
 }
+
+
 
 .icons{
   display: flex;

@@ -1,7 +1,7 @@
 import React from "react";
 import styles from './SideBar.module.css'
 import {FaInstagram, FaGithub, FaLinkedinIn } from 'react-icons/fa'
-import SideHamburger from "./SideHamburger";
+import { Link } from "react-router-dom";
 
 
 function SideBar(props ){
@@ -12,13 +12,13 @@ function SideBar(props ){
         <nav>
           <div className={styles.sideItem}>
             <ul>
-              <a href="#" className={styles.itens}>Home</a>
+              <li className={styles.itens}><Link to='/'>Home</Link></li>
             </ul>
             <ul>
-              <a href="#" className={styles.itens}>Projetos</a>
+              <li  className={styles.itens}><Link to='/projetos'>Projetos</Link> </li>
             </ul>
             <ul>
-              <a href="#" className={styles.itens}>Contato</a>
+              <li  className={styles.itens}><Link to='/'>Contato</Link></li>
             </ul>
           </div>
 
