@@ -12,11 +12,28 @@
   margin-bottom: 3rem;
 }
 
+.header hr{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 35%;
+  height: 0.2rem;
+  margin: 0 auto;
+  background-color: black;
+  border: none;
+  border-radius: 2rem;
+  
+  
+}
+
 .conhecimentos {
   display: grid;
   grid-template-columns: repeat(16, 1fr);
   grid-template-rows: repeat(6, 4rem);
   row-gap: 5rem;
+  background-color: red;
+  
 }
 
 .conhecimentoItem{
