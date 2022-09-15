@@ -4,6 +4,7 @@ import {IoLogoJavascript} from 'react-icons/io'
 import {FaNodeJs, FaGithub,  FaReact} from 'react-icons/fa'
 import {SiTypescript, SiMongodb} from 'react-icons/si'
 import mini_bg from '../img/mini-bg.png'
+import SideHamburger from "../Components/SideHamburger";
 
 
 function Conhecimento(){
@@ -55,6 +56,7 @@ function Conhecimento(){
             <img src={mini_bg} alt="background photo" />
           </div>
         </div>
+        <SideHamburger/>
       </div>
   )
   

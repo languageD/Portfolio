@@ -19,18 +19,7 @@ function Home(){
           <h1>Full-stack developer & designer </h1>
           <p>Victor Gabriel </p>
         </div>
-        <div onClick={()=>{
-          if(Class){
-           setClass('')
-            
-          }else{
-            setClass('show_bar')
-            
-          }
-        }}>  
-          <SideHamburger toggle={Class}/>
-        </div>
-          <SideBar toggle={Class}/>
+        <SideHamburger/>
 
       </header>
     
