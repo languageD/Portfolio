@@ -1,8 +1,10 @@
 .Project_container{
-  height: 100vh;
+  height: 100%;
   width: 100%;
-  background-color: rgb(90, 74, 74);
-  justify-content: space-between;
+  display: flex;
+  margin-top: 2rem;
+  background-color: rgb(233, 233, 233);
+  justify-content: space-evenly;
 }
 .Project_header{
   display: flex;
@@ -19,29 +21,48 @@
 }
 
 .projects{
-  display: flex;
-  flex-direction: column;
+  position: relative;
+  height: 30rem;
+  width: 20rem;
+  margin-top: 7rem;
+  margin-bottom: 3rem;
   
-  padding: 1rem;
-  height: 20rem;
-  width: 15rem;
-  margin: 1rem;
-  background-color: white;
-  border-radius: 1rem;
   
+}
+
+.cards_img{
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  border-radius: 10px;
 }
 
 .projects img{
-  height: 20rem;
-  align-items: center;
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+  opacity: 0.8;
+  transition: opacity 1s;
   
+}
+.projects:hover .imgCard img {
+  opacity: 0.4;
 }
 
 .project_txt{
+  position: absolute;
+  bottom: 0;
+  padding: 2rem;
+  color: white;
+  text-shadow: 1px 2px 3px black;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 1s;  
+}
+.projects:hover .card-info {
   opacity: 1;
-  
-  
-  
+  visibility: visible;
 }
 /* 
 .project_txt:hover{
