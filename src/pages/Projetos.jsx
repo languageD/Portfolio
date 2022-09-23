@@ -1,6 +1,7 @@
 import React from "react";
 import styles from './Projetos.module.css'
 import costsImg from '../img/costsImg.png'
+import comingsoon from  '../img/embreve.jpg'
 import SideHamburger from "../Components/SideHamburger";
 
 function Projetos(){
@@ -23,9 +24,10 @@ function Projetos(){
         </div> 
         <div className={styles.card}>
           <div className={styles.cards_img}>
-            <img src={costsImg} alt="costs image" />
+            <div className={styles.line}></div>
+            <img src={comingsoon} alt="costs image" />
           </div>
-          <div className="card_info">
+          <div className={styles.card_info}>
             <h2>Costs</h2>
             <h3>ReactJS</h3>
             <p  className={styles.project_txt}>Costs é um projeto feito totalmente em reactJS, para ser usado como um planejamento de gastos </p>
