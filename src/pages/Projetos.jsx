@@ -1,6 +1,6 @@
 import React from "react";
 import styles from './Projetos.module.css'
-import costsImg from '../img/test.png'
+import costsImg from '../img/costsImg.png'
 import SideHamburger from "../Components/SideHamburger";
 
 function Projetos(){

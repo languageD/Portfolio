@@ -1,14 +1,16 @@
 .ConhecimentoSessao{
   height: 100vh;
   width: 100%;
-  background-color: rgb(226, 225, 225);
+  background-color: #13161c;
+  /* background-color: rgb(226, 225, 225); */
 }
 
 .header{
   text-align: center;
   font-family: 'Ubuntu', sans-serif;
   font-size: 2rem;
-  color: rgba(0, 0, 0, 0.849);
+
+  color: rgba(255, 255, 255, 0.966);
   margin-bottom: 3rem;
 }
 
@@ -32,7 +34,7 @@
   grid-template-columns: repeat(16, 1fr);
   grid-template-rows: repeat(6, 4rem);
   row-gap: 5rem;
-  background-color: rgb(226, 225, 225);
+  background-color: #13161c;
   
   
 }
@@ -42,7 +44,7 @@
   align-items: center;
   font-size: 1.5rem;
   font-family: 'Source Sans Pro', sans-serif;
-  color: rgba(0, 0, 0, 0.849);
+  color: rgba(255, 255, 255, 0.849);
 }
 
 .conhecimentoItem a{
@@ -53,6 +55,8 @@
   font-weight: 500;
   font-family: 'Bitter', serif;
   margin-top: 1rem;
+  color: white;
+  text-shadow: 1px 2px 3px black;
 }
 
 .conhecimento:nth-child(1) {
@@ -84,12 +88,12 @@
   grid-column: 7/11;
   grid-row: 2/6;
   width: 100%;
-  background-color: rgb(226, 225, 225);
+  background-color: #13161c;
 }
 .imgbg img {
   object-fit: cover;
   width: 100%;
-  background-color: rgb(226, 225, 225);
+  background-color: #13161c;
 }
 
 @media (max-width: 500px){
