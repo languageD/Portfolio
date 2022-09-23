@@ -31,16 +31,18 @@ nav{
   align-items: center;
   justify-content: center;
   height: 90%;
+  margin-top: 6rem;
+  
 }
 
 .itens a{
   display: flex;
-  margin-top: 5rem;
   text-decoration: none;
   font-size: 2rem;
   color: rgb(21, 25, 32);
   transition: 1s;
-
+  
+  padding: 3rem;
 }
 
 .itens a:hover{

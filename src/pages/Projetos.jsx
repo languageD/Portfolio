@@ -1,7 +1,7 @@
 import React from "react";
 import styles from './Projetos.module.css'
-import costsImg from '../img/savings.svg'
-import Container from '../Components/Container'
+import costsImg from '../img/test.png'
+import SideHamburger from "../Components/SideHamburger";
 
 function Projetos(){
   return(
@@ -33,7 +33,7 @@ function Projetos(){
         </div> 
       </div>
 
-
+      <SideHamburger/>
     
     </div>
     
