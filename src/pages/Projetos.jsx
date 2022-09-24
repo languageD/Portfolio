@@ -24,13 +24,11 @@ function Projetos(){
         </div> 
         <div className={styles.card}>
           <div className={styles.cards_img}>
-            <div className={styles.line}></div>
             <img src={comingsoon} alt="costs image" />
           </div>
           <div className={styles.card_info}>
-            <h2>Costs</h2>
-            <h3>ReactJS</h3>
-            <p  className={styles.project_txt}>Costs é um projeto feito totalmente em reactJS, para ser usado como um planejamento de gastos </p>
+            <h2>Projeto futuro</h2>
+            <p  className={styles.project_txt}>Espaço para meu proximo projeto :) </p>
           </div>
         </div> 
       </div>
