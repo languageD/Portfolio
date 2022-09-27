@@ -1,14 +1,12 @@
 .Project_container{
   height: 100vh;
   width: 100%;
-  display: flex;
-  flex-direction: column;
   background-color: #13161c;  
 }
 
 .Project_header{
-  padding: 0;
   color: white ;
+  height: 10%;
   font-weight: bolder;
   text-align: center;
   font-size: 3rem;
@@ -16,61 +14,87 @@
 }
 
 .card_container{
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-  align-items: center;
-  margin-top: -5rem;
+  height: 90%;
   width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .card{
   height: 30rem;
   width: 20rem;
-  margin: 12rem 2rem 6rem 1rem ;
+  
 }
 
 .cards_img{
   height: 100%;
   width: 100%;
   background-color: black;
-  border-radius: 10px;
-  object-fit: cover;
+  border-radius: 20px;
+  
 }
 
 .cards_img img{
   height: 100%;
   width: 100%;
-  
-  border-radius: 10px;
+  border-radius: 20px;
   transition: opacity 1s;
 }
 
 .card:hover .cards_img img {
   opacity: 0.4;
 }
-.line{
-  background-color: white;
-}
-.line img{
-  border-radius: 50%;
-
-}
-
 
 .card_info {
-  z-index: 100;
-  margin-top: -8rem;
-  padding: 1rem;
+  position: absolute;
+  bottom: 0;
+  padding: 2rem;
   color: white;
   text-shadow: 1px 2px 3px black;
   opacity: 0;
   visibility: hidden;
   transition: all 1s;
+  z-index: 100;
 }
 
 .card:hover .card_info {
   opacity: 1;
   visibility: visible;
   z-index: 100;
+  
+}
+
+/* test para o em breve */
+
+
+
+.projeto_itens{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+}
+.pro {
+  background-color: #C4C4C4;
+  height: 30rem;
+  width: 20rem;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  overflow: hidden;
+  transition: ease-in-out 0.3s;
+}
+.pro:hover {
+  letter-spacing: 5px;
+}
+.pro div {
+  background-color: #705656;
+  width: 150rem;
+  text-align: center;
+  padding: 5% 0;
+  transform: rotate(-50deg);
 }

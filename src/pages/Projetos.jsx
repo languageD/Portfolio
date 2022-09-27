@@ -13,25 +13,41 @@ function Projetos(){
 
       <div className={styles.card_container}>
         <div className={styles.card}>
-          <div className={styles.cards_img}>
-            <img src={costsImg} alt="costs image" />
-          </div>
-          <div className={styles.card_info}>
-            <h2>Costs</h2>
-            <h3>ReactJS</h3>
-            <p  className={styles.project_txt}>Costs é um projeto feito totalmente em reactJS, para ser usado como um planejamento de gastos </p>
-          </div>
-        </div> 
+          <a href="https://github.com/languageD/Costs_ReactJS" target='_blank'>
+            <div className={styles.cards_img}>
+              <img src={costsImg} alt="costs image" />
+            </div>
+            <div className={styles.card_info}>
+              <h2>Costs</h2>
+              <h3>ReactJS</h3>
+              <p  className={styles.project_txt}>Costs é um projeto feito totalmente em reactJS, para ser usado como um planejamento de gastos </p>
+            </div>
+          </a>
+        </div>
         <div className={styles.card}>
-          <div className={styles.cards_img}>
-            <img src={comingsoon} alt="costs image" />
+          <div className={styles.pro}>
+            <div className={styles.breve}>
+              <p>em breve</p>
+            </div>
           </div>
           <div className={styles.card_info}>
-            <h2>Projeto futuro</h2>
-            <p  className={styles.project_txt}>Espaço para meu proximo projeto :) </p>
+            <h2>Futuro projeto</h2>
+            <p className={styles.project_txt}>Espaço para meu futuro projeto</p>
           </div>
-        </div> 
+        </div>  
+        <div className={styles.card}>
+          <div className={styles.pro}>
+            <div className={styles.breve}>
+              <p>em breve</p>
+            </div>
+          </div>
+          <div className={styles.card_info}>
+            <h2>Futuro projeto</h2>
+            <p className={styles.project_txt}>Espaço para meu futuro projeto</p>
+          </div>
+        </div>  
       </div>
+       
 
       <SideHamburger/>
     
