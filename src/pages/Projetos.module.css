@@ -70,14 +70,13 @@
 
 
 
-.projeto_itens{
-  display: flex;
-  flex-wrap: wrap;
+
+.breve{
   width: 100%;
-  justify-content: center;
+  background-color: red;
 }
 .pro {
-  background-color: #C4C4C4;
+  background-color: white;
   height: 30rem;
   width: 20rem;
   border-radius: 20px;
@@ -86,14 +85,18 @@
   justify-content: center;
   cursor: pointer;
   overflow: hidden;
-  transition: ease-in-out 0.3s;
+  transition: ease-in-out 1s;
+  opacity: 1;
+  
 }
 .pro:hover {
   letter-spacing: 5px;
+  opacity: 0.4;
+  transition: 1s;
+  
 }
 .pro div {
-  background-color: #705656;
-  width: 150rem;
+ 
   text-align: center;
   padding: 5% 0;
   transform: rotate(-50deg);
