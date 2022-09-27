@@ -146,3 +146,17 @@
   
 
 }
+
+@media (max-width: 280px){
+  .card{
+    height: 30rem;
+    width: 16rem;
+  }
+  .pro {
+    height: 30rem;
+    width: 16rem;
+  }
+  .card{
+    margin-top: 1rem;
+  }
+}
