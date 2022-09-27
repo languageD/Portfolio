@@ -8,6 +8,7 @@ function Projetos(){
     <div className={styles.Project_container}>
       <div className={styles.Project_header}>
         <h1>Projetos</h1>
+        <hr />
       </div>
 
       <div className={styles.card_container}>

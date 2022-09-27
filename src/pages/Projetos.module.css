@@ -13,6 +13,21 @@
   font-family: 'Ubuntu', sans-serif;;
 }
 
+.Project_header hr{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 35%;
+  height: 0.2rem;
+  margin: 0 auto;
+  background-color: white;
+  border: none;
+  border-radius: 2rem;
+  margin-top: 1rem;
+  
+}
+
 .card_container{
   height: 90%;
   width: 100%;
@@ -49,7 +64,7 @@
 }
 
 .card_info {
-  margin: 0.5rem 1rem;
+  margin: 0.5rem 0.3rem;
   color: white;
   text-shadow: 1px 2px 3px black;
   opacity: 0;
@@ -106,4 +121,28 @@
   padding: 5% 0;
   transform: rotate(-50deg);
   
+}
+
+
+/* media query */
+@media (max-width: 1000px){
+  .Project_container{
+    height: 100vh;
+    overflow-y:scroll ;
+    
+  }
+
+  .Project_header{
+    margin-top: 2rem;
+    font-size: 2rem;
+  }
+  .card_container{
+    margin-top: 5rem;
+  }
+  .card{
+    margin-bottom: 7rem;
+  }
+
+  
+
 }
