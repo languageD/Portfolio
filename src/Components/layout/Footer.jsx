@@ -7,10 +7,8 @@ function Footer(){
       <ul>
         <li>&copy; victor gabriel</li>
       </ul>
-      
     </footer>
   )
-
 }
 
 export default Footer

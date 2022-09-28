@@ -8,7 +8,6 @@ function SideBar(props ){
   return(
     <div className={`${styles[props.toggle]}`}>
      <div className={styles.Container}>
-        
         <nav>
           <div className={styles.sideItem}>
             <ul>
@@ -24,7 +23,6 @@ function SideBar(props ){
               <li  className={styles.itens}><Link to='/'>Contato</Link></li>
             </ul>
           </div>
-
           <div className={styles.icons}>
             <a href="https://www.instagram.com/victorgrs11/" target='_blank'><FaInstagram/></a>
             <a href="https://github.com/languageD" target='_blank'><FaGithub/></a>

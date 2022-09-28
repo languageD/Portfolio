@@ -6,13 +6,9 @@ import Projetos from './Components/pages/Projetos'
 import Conhecimento from './Components/pages/Conhecimento'
 
 
-
 function App() {
-  
-
   return (
     <Router>
-
       <Container customClass='min-height'>
         <Routes>
           <Route exact path='/' element={<Home/>}></Route> 
@@ -20,10 +16,7 @@ function App() {
           <Route path='/Conhecimento' element={<Conhecimento/>}></Route> 
         
         </Routes>
-      </Container>
-        
-
-     
+      </Container>   
     </Router>
   )
 }

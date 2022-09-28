@@ -1,5 +1,4 @@
 import React from "react";
-import { FaLinkedin,FaLinkedinIn } from "react-icons/fa";
 import styles from './Button.module.css'
 
 function Button({name , to}){

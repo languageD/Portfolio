@@ -15,12 +15,10 @@ header{
 .img_wrapper{
   display: flex;
   position: fixed;
- 
   height: 100%;
   width: 100%;
   overflow: hidden;
   background-color: black;
-
 }
 
 .img_wrapper img {
@@ -50,14 +48,9 @@ header{
   align-items: center;
   flex-direction: column;
   margin: 20rem auto;
-  
-  
-  
- 
 } 
 
 .info h1{
-  
   color: white;
   font-size: 4rem;
   font-family: 'Ubuntu', sans-serif; 
@@ -75,10 +68,7 @@ header{
   text-shadow: 3px 3px 3px black;
   animation: animaBanner 1s 0.8s forwards;
   opacity: 0;
-
 }
-
-
 
 @keyframes animaBanner {
   0% {

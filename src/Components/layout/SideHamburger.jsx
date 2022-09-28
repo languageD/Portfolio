@@ -23,7 +23,6 @@ function SideHamburger(){
       </div>
     </div>
   )
-
 }
 
 export default SideHamburger

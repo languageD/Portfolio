@@ -14,7 +14,6 @@
   font-family: 'Ubuntu', sans-serif;
 }
 
-
 @keyframes animaBanner {
   0% {
     transform: translateY(10rem) rotateY(-30deg);
@@ -25,4 +24,3 @@
   }
 }
 
-/* #24262c, #4d5055 */
