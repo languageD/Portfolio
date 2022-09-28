@@ -1,10 +1,9 @@
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 
-import Container from './Components/Container'
-import Home from './pages/Home'
-import Projetos from './pages/Projetos'
-import Footer from './Components/footer'
-import Conhecimento from './pages/Conhecimento'
+import Container from '../src/Components/layout/Container'
+import Home from './Components/pages/Home'
+import Projetos from './Components/pages/Projetos'
+import Conhecimento from './Components/pages/Conhecimento'
 
 
 
