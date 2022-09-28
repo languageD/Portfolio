@@ -15,7 +15,7 @@ function Home(){
       <div className={styles.info}>
         <h1>Full-stack developer & designer</h1>
         <p>Victor Gabriel</p>
-        <Button name='Linkin' to='https://www.linkedin.com/in/victor-gabriel-dos-reis-silva-40473b21b/' />
+        <Button name='Linkedin' to='https://www.linkedin.com/in/victor-gabriel-dos-reis-silva-40473b21b/' />
       </div>
       <SideHamburger/>
     </header>

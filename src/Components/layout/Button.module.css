@@ -9,7 +9,20 @@
   cursor: pointer;
   z-index: 100;
   font-size: 1rem;
-  
+  animation: animaBanner 1s 1s forwards;
+  opacity: 0;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+
+@keyframes animaBanner {
+  0% {
+    transform: translateY(10rem) rotateY(-30deg);
+  }
+  100% {
+    transform: translateY(0) rotateY(0);
+    opacity: 1;
+  }
 }
 
 /* #24262c, #4d5055 */

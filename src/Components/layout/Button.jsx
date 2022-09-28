@@ -1,9 +1,9 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { FaLinkedin,FaLinkedinIn } from "react-icons/fa";
 import styles from './Button.module.css'
 
 function Button({name , to}){
-  return <a href={to} target='_blank'><button className={styles.button}>{name}</button></a>
+  return <a href={to} target='_blank'><button className={styles.button}> {name}</button></a>
 }
 
 export default Button
