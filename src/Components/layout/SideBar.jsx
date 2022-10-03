@@ -20,7 +20,7 @@ function SideBar(props ){
               <li  className={styles.itens}><Link to='/projetos'>Projetos</Link> </li>
             </ul>
             <ul>
-              <li  className={styles.itens}><Link to='/'>Contato</Link></li>
+              <li  className={styles.itens}><Link to='/Contatos'>Contato</Link></li>
             </ul>
           </div>
           <div className={styles.icons}>
