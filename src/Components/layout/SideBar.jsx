@@ -4,7 +4,7 @@ import {FaInstagram, FaGithub, FaLinkedinIn } from 'react-icons/fa'
 import { Link } from "react-router-dom";
 
 
-function SideBar(props ){
+function SideBar(props){
   return(
     <div className={`${styles[props.toggle]}`}>
      <div className={styles.Container}>
