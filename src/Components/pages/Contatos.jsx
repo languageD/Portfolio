@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import Input from "../form/Input";
-
+import Submitbutton from "../form/SubmitButton";
 
 function Contatos(){
 
@@ -28,6 +28,7 @@ function Contatos(){
       <form onSubmit={submit}> {/* criar o form*/}
         <Input text='E-mail:' type='text' name='email' placeholder='E-mail' handleOnChange={sendEmail}/>
         <Input text='Mensagem:' type='text' name='Mensagem' placeholder='Mesagem' handleOnChange={sendEmail}/>
+        <Submitbutton text='Enviar'/>
       </form>
 
     </div>

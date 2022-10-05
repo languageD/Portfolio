@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./SubmitButton.module.css";
 
-function Submitbutton(text){
+function Submitbutton({text}){
   return(
     <div>
       <button className={styles.Container}>{text}</button>
