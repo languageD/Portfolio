@@ -1,18 +1,25 @@
 const express = require('express')
-const cors = require('cors')
 
+const cors = require('cors')
+const bodyparser = require("body-parser")
 const app = express()
 app.use(cors())
+
+var urlencodedParser = bodyparser.urlencoded({ extended: false})
 
 
 app.get("/api", (req, res) =>{
     res.json({"users": ["one","two","three"]})
 })
 
-app.post('/api', (req, res) =>{
-    const user = userModel.create(req.body)
+app.post('/api', urlencodedParser, (req, res) =>{
 
-    res.status(200).send(user)
+    response = {
+        nome: req.body.email,
+        numero: req.body.Numero,
+        mensage: req.body.Mensagem
+    }
+    res.end(JSON.stringify(response))
 } )
 
 

@@ -3,39 +3,26 @@ import { useState, useEffect } from "react";
 import Input from "../form/Input";
 import Submitbutton from "../form/SubmitButton";
 
-function Contatos(){
-  const [backend, setBackend] = useState([])
-  const [email, setemail] = useState('')
-  const [dados, setDados] = useState()
 
-  function submit(e){
-    e.preventDafault()
+
+function Contatos(){
+  const [backend, setBackend] = useState({})
+  const [name, setName] = useState('')
+  const [number, setNumber] = useState('')
+  const [email, setemail] = useState('')
+  const [dados, setDados] = useState([{}])
+
+
+  function submit(e, text){
+
     fetch("http://localhost:5000/api", {
       method: "POST",
       'content-Type': 'application/json',
     })
     .then((resp)=> resp.json())
     .then((dados)=> setDados(dados))
+    // {console.log(dados)}
   }
-
-  function sendEmail(e){
-    setBackend(
-      e.target.value
-    )
-  } 
-
-  useEffect(()=>{
-    fetch("http://localhost:5000/api", {
-      method: "GET",
-      headers:{
-        'content-Type': 'application/json',
-      }
-      
-    })
-    .then((resp)=> resp.json())
-    .then((dados) => setBackend(dados))
-  
-  }, [])
 
   
   
@@ -45,13 +32,13 @@ function Contatos(){
         <h1>contatos</h1> 
       </div>
 
-      <form onSubmit={submit}> {/* criar o form*/}
-        <Input text='E-mail:' type='text' name='email' placeholder='E-mail' handleOnChange={sendEmail}/>
-        <Input text='Numero:' type='Number' name='Numero' placeholder='Numero' handleOnChange={sendEmail}/>
-        <Input text='Mensagem:' type='text' name='Mensagem' placeholder='Mesagem' handleOnChange={sendEmail}/>
-        <Submitbutton text='Enviar' handleOnChange={submit}/>
-      </form>
-      {console.log(backend)}
+    <form onSubmit={handleFormSubmit} method='POST'>
+      <input type="text" value={name} name={name}  onChange={(event) => setName(event.target.value)} />
+      <input type="number" value={number} name={number}  onChange={(event) => setNumber(event.target.value)} />
+      <input type="text" value={email} name={email}  onChange={(event) => setemail(event.target.value)} />
+      <button type="submit">submit</button>    
+    </form>
+
 
     </div>
   )  
