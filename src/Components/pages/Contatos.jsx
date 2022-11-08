@@ -13,17 +13,28 @@ function Contatos(){
   const [dados, setDados] = useState([{}])
 
 
-  function submit(e, text){
-
-    fetch("http://localhost:5000/api", {
-      method: "POST",
-      'content-Type': 'application/json',
+  const handleFormSubmit= (e)=> {
+    e.preventDefault()
+    const dataToSubmit = {
+      name,
+      number,
+      email,
+    }
+    fetch('https://jsonplaceholder.typicode.com/posts', {
+      method: 'POST',
+      body: JSON.stringify({
+       dataToSubmit
+      }),
+      headers: {
+        'Content-type': 'application/json; charset=UTF-8',
+      },
     })
-    .then((resp)=> resp.json())
-    .then((dados)=> setDados(dados))
-    // {console.log(dados)}
+    .then((response) => response.json())
+    .then((json) => console.log(json));
   }
 
+ 
+ 
   
   
   return (
@@ -32,16 +43,18 @@ function Contatos(){
         <h1>contatos</h1> 
       </div>
 
-    <form onSubmit={handleFormSubmit} method='POST'>
-      <input type="text" value={name} name={name}  onChange={(event) => setName(event.target.value)} />
-      <input type="number" value={number} name={number}  onChange={(event) => setNumber(event.target.value)} />
-      <input type="text" value={email} name={email}  onChange={(event) => setemail(event.target.value)} />
-      <button type="submit">submit</button>    
+     <form onSubmit={handleFormSubmit} >
+      <input type="text" value={name} name='name'  placeholder='nome'  onChange={(event) => setName(event.target.value)} /> <br/>
+
+      <input type="number" value={number} name='number' placeholder='numero'  onChange={(event) => setNumber(event.target.value)} />
+      <input type="text" value={email} name='email' placeholder='e-mail'  onChange={(event) => setemail(event.target.value)} />
+      <button type="submit" >submit</button>    
     </form>
 
 
     </div>
   )  
 }
+
 
 export default Contatos
