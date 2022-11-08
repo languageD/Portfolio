@@ -22,9 +22,7 @@ function Contatos(){
     }
     fetch('https://jsonplaceholder.typicode.com/posts', {
       method: 'POST',
-      body: JSON.stringify({
-       dataToSubmit
-      }),
+      body: JSON.stringify({dataToSubmit}),
       headers: {
         'Content-type': 'application/json; charset=UTF-8',
       },
