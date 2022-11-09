@@ -2,6 +2,8 @@ import React from "react";
 import { useState, useEffect } from "react";
 import Input from "../form/Input";
 import Submitbutton from "../form/SubmitButton";
+import axios from 'axios'
+import { response } from "express";
 
 
 
@@ -20,15 +22,11 @@ function Contatos(){
       number,
       email,
     }
-    fetch('https://jsonplaceholder.typicode.com/posts', {
-      method: 'POST',
-      body: JSON.stringify({dataToSubmit}),
-      headers: {
-        'Content-type': 'application/json; charset=UTF-8',
-      },
-    })
-    .then((response) => response.json())
-    .then((json) => console.log(json));
+    axios.post('https://localhost:5000/post',{
+      name: dataToSubmit.name,
+      number: dataToSubmit.name,
+      email: dataToSubmit.name
+    }).then((Response) => console.log(response))
   }
 
  
