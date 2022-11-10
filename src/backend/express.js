@@ -3,25 +3,29 @@ const ConnectingMongo = require('./database/ConnetingDb')
 const cors = require('cors')
 const bodyparser = require("body-parser")
 const app = express()
+const userModel = require('./database/schema')
+const { db } = require('./database/schema')
 
 app.use(express.json())
 app.use(cors())
 
-var urlencodedParser = bodyparser.urlencoded({ extended: false})
 
 
-app.get("/api", (req, res) =>{
+
+app.get("/post", (req, res) =>{
     res.json({"users": ["one","two","three"]})
 })
 
-app.post('/api', urlencodedParser, (req, res) =>{
+app.post('/post', (req, res) =>{
 
-    response = {
-        nome: req.body.email,
-        numero: req.body.Numero,
-        mensage: req.body.Mensagem
-    }
-    res.end(JSON.stringify(response))
+    const name = req.body.name
+    const email = req.body.email
+    const number = req.body.number
+
+    const user = userModel.create(req.body)
+    
+    res.status(200).send(user)
+   
 } )
 
 //install axios, import axios from 'axios';

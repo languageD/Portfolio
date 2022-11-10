@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import Input from "../form/Input";
 import Submitbutton from "../form/SubmitButton";
 import axios from 'axios'
-import { response } from "express";
+
 
 
 
@@ -22,12 +22,14 @@ function Contatos(){
       number,
       email,
     }
-    axios.post('https://localhost:5000/post',{
+   axios.post('https://localhost:5000/post',{
       name: dataToSubmit.name,
       number: dataToSubmit.name,
       email: dataToSubmit.name
-    }).then((Response) => console.log(response))
+    })
+    .then((Resp) => console.log(Resp))
   }
+   
 
  
  
