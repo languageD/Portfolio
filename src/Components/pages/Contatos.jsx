@@ -1,8 +1,7 @@
 import React from "react";
 import { useState, useEffect } from "react";
-import Input from "../form/Input";
-import Submitbutton from "../form/SubmitButton";
 import axios from 'axios'
+import Message from "../layout/Message";
 
 
 
@@ -12,7 +11,9 @@ function Contatos(){
   const [number, setNumber] = useState('' )
   const [email, setemail] = useState('')
   const [msg, setmsg] = useState('')
-  
+  const [messageAlert, setmesssageAlert] = useState('')
+
+
 
   const handleFormSubmit = (e)=> {
     e.preventDefault()
@@ -29,18 +30,16 @@ function Contatos(){
       msg: dataToSubmit.msg
     })
     .then((Resp) => console.log(Resp))
-    .catch(err => console.log('Verifique a caixa de texto!'))
+    .catch((error) =>  setmesssageAlert(error))
   }
 
-  const handleVerification = () =>{
-
-  }
   
   return (
     <div> 
       <div> 
         <h1>contatos</h1> 
       </div>
+      {messageAlert && < Message txt='Aconteceu um erro, certifique-se que todas estão prenchidas.' type='error'/>  }
 
      <form onSubmit={handleFormSubmit} >
       <input type="text" value={name} name='name'  placeholder='nome'  onChange={(event) => setName(event.target.value)} /> <br/>
@@ -52,7 +51,7 @@ function Contatos(){
       <input type="text" value={msg} name='msg' placeholder='Sua mensagem'  onChange={(event) => setmsg(event.target.value)} />
 
 
-      <button type="submit" onClick={handleVerification}> Enviar</button>    
+      <button type="submit"> Enviar</button>    
     </form>
 
 
