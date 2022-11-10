@@ -22,17 +22,18 @@ function Contatos(){
       email,
       msg
     }
-    
-    
-    
     axios.post('http://localhost:5000/post',{
-     name: dataToSubmit.name,
-     number: dataToSubmit.number,
-     email: dataToSubmit.email,
-     msg: dataToSubmit.msg
-   })
+      name: dataToSubmit.name,
+      number: dataToSubmit.number,
+      email: dataToSubmit.email,
+      msg: dataToSubmit.msg
+    })
     .then((Resp) => console.log(Resp))
-    .catch(err => console.log(err))
+    .catch(err => console.log('Verifique a caixa de texto!'))
+  }
+
+  const handleVerification = () =>{
+
   }
   
   return (
@@ -51,7 +52,7 @@ function Contatos(){
       <input type="text" value={msg} name='msg' placeholder='Sua mensagem'  onChange={(event) => setmsg(event.target.value)} />
 
 
-      <button type="submit"> Enviar</button>    
+      <button type="submit" onClick={handleVerification}> Enviar</button>    
     </form>
 
 
