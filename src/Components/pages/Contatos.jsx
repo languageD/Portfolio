@@ -22,13 +22,16 @@ function Contatos(){
       number,
       email,
     }
-   axios.post('https://localhost:5000/post',{
-      name: dataToSubmit.name,
-      number: dataToSubmit.name,
-      email: dataToSubmit.name
-    })
+   axios.post('http://localhost:5000/post',{
+     name: dataToSubmit.name,
+     number: dataToSubmit.number,
+     email: dataToSubmit.email
+   })
     .then((Resp) => console.log(Resp))
+    .catch(err => console.log(err))
+
   }
+  
    
 
  
