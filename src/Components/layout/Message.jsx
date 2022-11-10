@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useEffect } from "react";
-import styles from "./Mensage.module.css"
+import styles from "./Message.module.css"
 
 function Mensage({txt, type}){
     let [visible, setvisible] = useState(false)
@@ -12,7 +12,6 @@ function Mensage({txt, type}){
                 return
             }
             
-            console.log('test')
             setvisible(true)
 
             const timer = setTimeout(() =>{
