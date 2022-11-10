@@ -12,6 +12,10 @@ const userSchema = new mongoose.Schema({
   number: {
     type: String,
     required: true
+  },
+  msg: {
+    type: String,
+    required: true
   }
 })
 
