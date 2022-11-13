@@ -1,7 +1,8 @@
 import React from "react";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import axios from 'axios'
 import Message from "../layout/Message";
+import styles from './Contatos.module.css'
 
 
 
@@ -35,11 +36,10 @@ function Contatos(){
 
   
   return (
-    <div> 
+    <div className=""> 
       <div> 
         <h1>contatos</h1> 
       </div>
-      {messageAlert && < Message txt='Aconteceu um erro, certifique-se que todas estão prenchidas.' type='error'/>  }
 
      <form onSubmit={handleFormSubmit} >
       <input type="text" value={name} name='name'  placeholder='nome'  onChange={(event) => setName(event.target.value)} /> <br/>
