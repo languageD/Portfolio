@@ -1,8 +1,7 @@
 import React from "react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import axios from 'axios'
 import Message from "../layout/Message";
-import styles from './Contatos.module.css'
 
 
 
@@ -24,24 +23,32 @@ function Contatos(){
       email,
       msg
     }
+   
     axios.post('http://localhost:5000/post',{
       name: dataToSubmit.name,
       number: dataToSubmit.number,
       email: dataToSubmit.email,
       msg: dataToSubmit.msg
     })
-    .then((Resp) => console.log(Resp))
-    .catch((error) =>  setmesssageAlert(error))
+    .then((resp) =>{
+      console.log(resp)
+      
+    })
+    .catch((error) =>{
+      setmesssageAlert(error)
+      console.log('deu erro')
+      
+    })    
   }
-
   
   return (
-    <div className=""> 
+    <div > 
       <div> 
         <h1>contatos</h1> 
       </div>
+      {messageAlert && < Message txt='Aconteceu um erro, certifique-se que todas estão prenchidas.' type='error'/>  }
 
-     <form onSubmit={handleFormSubmit} >
+     <form onSubmit={handleFormSubmit} id='form'>
       <input type="text" value={name} name='name'  placeholder='nome'  onChange={(event) => setName(event.target.value)} /> <br/>
 
       <input type="number" value={number} name='number' placeholder='numero'  onChange={(event) => setNumber(event.target.value)} />
