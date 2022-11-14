@@ -23,8 +23,9 @@ app.post('/post', async (req, res) =>{
             res.status(200).send(user)
         }
         catch(err){
-            res.status(400)
-            console.log('deu erro:', err)
+            res.status(400).send(err)
+            console.log(err)
+            
         }  
     }    
 })
