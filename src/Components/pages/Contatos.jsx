@@ -13,7 +13,11 @@ function Contatos(){
     email: '',
     messageInput: ''
   })
-  const [messageAlert, setmesssageAlert] = useState('')
+  const [messageAlert, setmesssageAlert] = useState({
+    txt:'',
+    type:''
+  })
+  const [showMessage, setshowMessage] = useState(false)
 
 
   const gettingInput = (e) => setUser({...user, [e.target.name]: e.target.value})
@@ -28,21 +32,34 @@ function Contatos(){
       messageInput: user.messageInput
     })
     .then((resp) =>{
-      setmesssageAlert('success')
-      console.log('deu certo') 
+      setshowMessage(true)
+      setmesssageAlert({
+        txt: 'Enviado com sucesso!',
+        type: 'success'
+      })
     })
     .catch((error) =>{
-      setmesssageAlert(error)
-      console.log('deu erro')
+      setshowMessage(true)
+      setmesssageAlert({
+        txt: 'Verifique se todas as caixas estão preenchidas!',
+        type: 'error'
+      })
       
     })  
+
+    setUser({
+      name: '',
+      number: '',
+      email: '',
+      messageInput: ''
+    })
   }
   return (
     <div> 
       <div> 
         <h1>contatos</h1> 
       </div>
-      {messageAlert && < Message txt='Aconteceu um erro, certifique-se que todas estão prenchidas.' type='error'/>  }
+      {showMessage && < Message txt={messageAlert.txt} type={messageAlert.type}/> }
 
      <form onSubmit={handleFormSubmit} id='form'>
         <input type="text" value={user.name} name='name'  placeholder='nome'  onChange={gettingInput} /> <br/>
@@ -52,7 +69,6 @@ function Contatos(){
         <input type="text" value={user.email} name='email' placeholder='e-mail' onChange={gettingInput}  />
 
         <input type="text" value={user.messageInput} name='messageInput' placeholder='Sua mensagem' onChange={gettingInput}  />
-
 
         <button type="submit"> Enviar</button>    
       </form>
