@@ -1,7 +1,8 @@
 import React from "react";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import axios from 'axios'
 import Message from "../layout/Message";
+import SideHamburger from "../layout/SideHamburger";
 
 
 
@@ -55,10 +56,12 @@ function Contatos(){
     })
   }
   return (
-    <div> 
+    <div className={styles}> 
       <div> 
         <h1>contatos</h1> 
       </div>
+      <SideHamburger/>
+
       {showMessage && < Message txt={messageAlert.txt} type={messageAlert.type}/> }
 
      <form onSubmit={handleFormSubmit} id='form'>
@@ -72,6 +75,7 @@ function Contatos(){
 
         <button type="submit">Enviar</button>    
       </form>
+
     </div>
   )  
 }
