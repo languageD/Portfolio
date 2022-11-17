@@ -9,10 +9,7 @@ const userSchema = new mongoose.Schema({
     type: String,
     required: true
   },
-  number: {
-    type: String,
-    required: true
-  },
+ 
   messageInput: {
     type: String,
     required: true

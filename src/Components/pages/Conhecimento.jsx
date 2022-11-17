@@ -24,7 +24,7 @@ function Conhecimento(){
         <div className={styles.conhecimento}>
           <h2 className={styles.conhecimentoItem}>
           <SiTypescript/> TypeScript</h2>
-          <p className={styles.conhecimento_text}> Um ótimo apoio     para  o Javascript, gosto bastante de usa-la pela sua   facilidade e utilidade pelo fato de ser extremamente típada.
+          <p className={styles.conhecimento_text}> Um ótimo apoio para  o Javascript, gosto bastante de usa-la pela sua   facilidade e utilidade pelo fato de ser extremamente típada.
           </p>
         </div>
         <div className={styles.conhecimento}>
@@ -38,7 +38,7 @@ function Conhecimento(){
         <div className={styles.conhecimento}>
           <h2 className={styles.conhecimentoItem}>
           <FaGithub/> GitHub</h2>
-          <p className={styles.conhecimento_text}>Um habitante perfeito para demonstrar meus projetos, com diversas ferramentas que ajuda eu e muito outros usuários.  </p>
+          <p className={styles.conhecimento_text}>Um habitante perfeito para demonstrar meus projetos, com diversas ferramentas versáteis e importantes .  </p>
           </div>
         <div className={styles.conhecimento}>
           <h2 className={styles.conhecimentoItem}>

@@ -67,14 +67,12 @@ function Contatos(){
           <SideHamburger/>
             <form onSubmit={handleFormSubmit}>
               <div className={styles.Field_group}>
-                <input type="text" value={user.name} name='name'  placeholder='nome'  onChange={gettingInput} className={styles.Inputs} /> <br/>
+                <input type="text" value={user.name} name='name'  placeholder='Nome'  onChange={gettingInput} className={styles.Inputs} /> <br/>
               </div>
 
+              
               <div className={styles.field_group}>
-                <input type="number" value={user.number} name='number' placeholder='numero'  onChange={gettingInput} className={styles.Inputs} />
-              </div>
-              <div className={styles.field_group}>
-                <input type="text" value={user.email} name='email' placeholder='e-mail' onChange={gettingInput} className={styles.Inputs} />
+                <input type="text" value={user.email} name='email' placeholder='E-mail' onChange={gettingInput} className={styles.Inputs} />
               </div>
               <div className={styles.field_group}>
                 <input type="text" value={user.messageInput} name='messageInput' placeholder='Sua mensagem' onChange={gettingInput} className={styles.Inputs} />
