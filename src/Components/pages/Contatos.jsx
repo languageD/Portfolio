@@ -3,6 +3,7 @@ import { useState } from "react";
 import axios from 'axios'
 import Message from "../layout/Message";
 import SideHamburger from "../layout/SideHamburger";
+import styles from './Contatos.module.css'
 
 
 
@@ -56,27 +57,41 @@ function Contatos(){
     })
   }
   return (
-    <div className={styles}> 
-      <div> 
-        <h1>contatos</h1> 
+    <section className={styles.Container}> 
+      <div className={styles.Wrapper}>
+        <div className={styles.Bg_left}></div>
+        <div className={styles.Bg_right}>
+        
+          <h1>Contatos</h1> 
+
+
+          <SideHamburger/>
+
+          {showMessage && < Message txt={messageAlert.txt} type={messageAlert.type}/> }
+
+          <form onSubmit={handleFormSubmit}>
+            <div className={styles.Field_group}>
+              <label className={styles.Field_label} >Nome:</label>
+              <input type="text" value={user.name} name='name'  placeholder='nome'  onChange={gettingInput} className={styles.Inputs} /> <br/>
+            </div>
+
+            <div className={styles.field_group}>
+              <label className={styles.Field_label} >Numero:</label>
+              <input type="number" value={user.number} name='number' placeholder='numero'  onChange={gettingInput} className={styles.Inputs} />
+            </div>
+            <div className={styles.field_group}>
+             <label className={styles.Field_label} >E-mail:</label>
+              <input type="text" value={user.email} name='email' placeholder='e-mail' onChange={gettingInput} className={styles.Inputs} />
+            </div>
+            <div className={styles.field_group}>
+              <label className={styles.Field_label}>Mensagem:</label>
+              <input type="text" value={user.messageInput} name='messageInput' placeholder='Sua mensagem' onChange={gettingInput} className={styles.Inputs} />
+            </div>
+            <button type="submit" className={styles.button}>Enviar</button>    
+          </form>
+        </div>
       </div>
-      <SideHamburger/>
-
-      {showMessage && < Message txt={messageAlert.txt} type={messageAlert.type}/> }
-
-     <form onSubmit={handleFormSubmit} id='form'>
-        <input type="text" value={user.name} name='name'  placeholder='nome'  onChange={gettingInput} /> <br/>
-
-        <input type="number" value={user.number} name='number' placeholder='numero'  onChange={gettingInput}  />
-
-        <input type="text" value={user.email} name='email' placeholder='e-mail' onChange={gettingInput}  />
-
-        <input type="text" value={user.messageInput} name='messageInput' placeholder='Sua mensagem' onChange={gettingInput}  />
-
-        <button type="submit">Enviar</button>    
-      </form>
-
-    </div>
+    </section>
   )  
 }
 
