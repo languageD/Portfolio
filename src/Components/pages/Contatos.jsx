@@ -69,26 +69,27 @@ function Contatos(){
 
           {showMessage && < Message txt={messageAlert.txt} type={messageAlert.type}/> }
 
-          <form onSubmit={handleFormSubmit}>
-            <div className={styles.Field_group}>
-              <label className={styles.Field_label} >Nome:</label>
-              <input type="text" value={user.name} name='name'  placeholder='nome'  onChange={gettingInput} className={styles.Inputs} /> <br/>
-            </div>
+          
+            <form onSubmit={handleFormSubmit}>
+              <div className={styles.Field_group}>
+                <label className={styles.Field_label} >Nome:</label>
+                <input type="text" value={user.name} name='name'  placeholder='nome'  onChange={gettingInput} className={styles.Inputs} /> <br/>
+              </div>
 
-            <div className={styles.field_group}>
-              <label className={styles.Field_label} >Numero:</label>
-              <input type="number" value={user.number} name='number' placeholder='numero'  onChange={gettingInput} className={styles.Inputs} />
-            </div>
-            <div className={styles.field_group}>
-             <label className={styles.Field_label} >E-mail:</label>
-              <input type="text" value={user.email} name='email' placeholder='e-mail' onChange={gettingInput} className={styles.Inputs} />
-            </div>
-            <div className={styles.field_group}>
-              <label className={styles.Field_label}>Mensagem:</label>
-              <input type="text" value={user.messageInput} name='messageInput' placeholder='Sua mensagem' onChange={gettingInput} className={styles.Inputs} />
-            </div>
-            <button type="submit" className={styles.button}>Enviar</button>    
-          </form>
+              <div className={styles.field_group}>
+                <label className={styles.Field_label} >Numero:</label>
+                <input type="number" value={user.number} name='number' placeholder='numero'  onChange={gettingInput} className={styles.Inputs} />
+              </div>
+              <div className={styles.field_group}>
+              <label className={styles.Field_label} >E-mail:</label>
+                <input type="text" value={user.email} name='email' placeholder='e-mail' onChange={gettingInput} className={styles.Inputs} />
+              </div>
+              <div className={styles.field_group}>
+                <label className={styles.Field_label}>Mensagem:</label>
+                <input type="text" value={user.messageInput} name='messageInput' placeholder='Sua mensagem' onChange={gettingInput} className={styles.Inputs} />
+              </div>
+              <button type="submit" className={styles.button}>Enviar</button>    
+            </form>
         </div>
       </div>
     </section>
