@@ -58,18 +58,13 @@ function Contatos(){
   }
   return (
     <section className={styles.Container}> 
+      {showMessage && < Message txt={messageAlert.txt} type={messageAlert.type}/> }
+
       <div className={styles.Wrapper}>
         <div className={styles.Bg_left}></div>
         <div className={styles.Bg_right}>
-        
           <h1>Contatos</h1> 
-
-
           <SideHamburger/>
-
-          {showMessage && < Message txt={messageAlert.txt} type={messageAlert.type}/> }
-
-          
             <form onSubmit={handleFormSubmit}>
               <div className={styles.Field_group}>
                 <label className={styles.Field_label} >Nome:</label>

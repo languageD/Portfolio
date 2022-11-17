@@ -5,7 +5,6 @@
   border-radius: 20px;
   border: none;
   background: linear-gradient(to right, #13161c, #2d2f33);
-  /* trocar o as cores por um bagulho mais parecido com fundo */
   color: white;
   cursor: pointer;
   z-index: 100;

@@ -69,12 +69,13 @@
     color: rgb(238, 234, 234);
 }
 .button{
-    height: 3rem;
-    width: 10rem;
+    height: 4rem;
+    width: 15rem;
     border: none;
-    border-radius: 5px;
-    background-color: #13161c;
+    border-radius: 2rem;
+    background: linear-gradient(to right, #13161c, #2d2f33);
     color: white;
     margin-top: 1rem;
+    cursor: pointer;
     
 }
