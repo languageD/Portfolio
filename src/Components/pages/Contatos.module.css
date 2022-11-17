@@ -46,9 +46,6 @@
     width: 100%;
    
 }
-.Field_group {
-    position: relative;
-}
 
 .Inputs{
     background-color: transparent;
@@ -134,13 +131,6 @@
         }
     }
 
-    @media (max-height: 600px) {
-        .Wrapper{
-            height: 100%;
-            position: fixed;
-        }
-        
-    }
 }
 
 
