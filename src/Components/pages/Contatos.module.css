@@ -4,7 +4,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.795);
+    background-color: #13161c;  
 }
 
 .Wrapper{
@@ -36,7 +36,6 @@
     text-align: center;
     font-size: 2.4rem;
     font-weight: lighter;
-    color: rgb(238, 234, 234);
 }
 
 
@@ -70,6 +69,12 @@
     color: rgb(238, 234, 234);
 }
 .button{
-    margin-left: 20rem;
+    height: 3rem;
+    width: 10rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #13161c;
+    color: white;
+    margin-top: 1rem;
     
 }
