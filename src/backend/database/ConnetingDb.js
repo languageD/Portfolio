@@ -1,14 +1,17 @@
 const moongoose = require('mongoose')
+const dotenv = require('dotenv')
+
+dotenv.config()
 
 const ConnectingMongo = async () => {
-    await moongoose.connect(
-        'mongodb+srv://admin:gF42pMKl2lZv1yIk@cardigan.trimt0i.mongodb.net/test', err =>{
-            if(err){
-                console.log('aconteceu um erro')
-            }
-            console.log('Conectado com sucesso!')
-        }
-    )
+    try{
+        await moongoose.connect(
+        `mongodb+srv://${process.env.USER}:${process.env.PASSWORD}@cardigan.trimt0i.mongodb.net/test`,)
+        console.log('conectado')
+    }catch(err){
+        console.log('failed to connect to MongoDB', err)
+    }
+   
 }
 
 module.exports = ConnectingMongo
