@@ -2,4 +2,4 @@
 
 ## Bem vindo ao meu portfolio, onde demostro algumas habilidades e ideia minhas 💡
 
-https://img.shields.io/static/v1?label=React/NodeJS&message=<MESSAGE>&color=<COLOR>&style=<STYLE>&logo=<LOGO>
+<img src="https://img.shields.io/static/v1?label=Blog&message=Rocketseat&color=7159c1&style=for-the-badge&logo=ghost"/>
