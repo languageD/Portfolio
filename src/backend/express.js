@@ -28,6 +28,6 @@ app.post('/post', async (req, res) =>{
         }  
     }    
 })
-console.log(process.env.PORT)
-// ConnectingMongo()   
-app.listen(5000, () => console.log('rodando na port 5000'))
+
+ ConnectingMongo()    
+app.listen(process.env.PORT, () => console.log('rodando'))
