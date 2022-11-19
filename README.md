@@ -7,6 +7,6 @@
 Esses foram alguns do recursos que utilizei no meu projeto
 
 * [JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
-* [ReactJS]([https://www.w3schools.com/html/](https://pt-br.reactjs.org))
+* [ReactJS](https://pt-br.reactjs.org)
 * [NodeJS](https://nodejs.org/en/)
 * [MongoDB](https://www.mongodb.com)
