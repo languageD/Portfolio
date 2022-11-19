@@ -29,5 +29,5 @@ app.post('/post', async (req, res) =>{
     }    
 })
 
- ConnectingMongo()    
+ConnectingMongo()    
 app.listen(process.env.PORT, () => console.log('rodando'))

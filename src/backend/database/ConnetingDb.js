@@ -1,7 +1,6 @@
 const moongoose = require('mongoose')
 
 
-
 const ConnectingMongo = async () => {
     try{
         await moongoose.connect( 
