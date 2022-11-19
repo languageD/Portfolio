@@ -6,7 +6,7 @@
 
 Esses foram alguns do recursos que utilizei no meu projeto
 
-* [JavaScript]([[https://www.w3schools.com/html/](https://pt-br.reactjs.org)](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript))
+* [JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
 * [ReactJS]([https://www.w3schools.com/html/](https://pt-br.reactjs.org))
 * [NodeJS]([https://developer.mozilla.org/pt-BR/docs/Web/CSS])
 * [MongoDB](https://www.mongodb.com)
