@@ -11,7 +11,7 @@
 * [MongoDB](https://www.mongodb.com)
 
 
-### Pré-requisitos
+### 👉 Pré-requisitos
 
 Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
 [ReactJS](https://pt-br.reactjs.org), [Node.js](https://nodejs.org/en/). 
@@ -58,7 +58,7 @@ $ npm run backend
 ### Victor Gabriel🚀
 #### Feito com ❤️ por Victor Gabriel 🤙🏽 Entre em contato!
 
-![Custom badge](https://img.shields.io/endpoint?color=4A4E69&label=Linkedin&style=social&url=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fvictor-gabriel-dos-reis-silva-40473b21b%2F)
+
 
 
 
