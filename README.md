@@ -58,11 +58,11 @@ $ npm run backend
 ### Victor Gabriel🚀
 #### Feito com ❤️ por Victor Gabriel 🤙🏽 Entre em contato!
 
-![image](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=telegram&logoColor=white)
+![image](https://www.linkedin.com/in/victor-gabriel-dos-reis-silva-40473b21b/badge/LinkedIn-0077B5?style=for-the-badge&logo=telegram&logoColor=white)
 
 
 
 
-[![iuricode](https://github-readme-stats.vercel.app/api/top-langs/?username=iuricode&hide=html&layout=compact&theme=dark)
+
 
 
