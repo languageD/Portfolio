@@ -30,4 +30,4 @@ app.post('/post', async (req, res) =>{
 })
 
 ConnectingMongo()    
-app.listen(process.env.PORT, () => console.log('rodando'))
+app.listen(5000, () => console.log('rodando'))
