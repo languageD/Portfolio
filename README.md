@@ -56,9 +56,9 @@ $ npm run backend
 
 ## Autor
 ### Victor Gabriel🚀
-![Twitter URL](https://img.shields.io/twitter/url?style=social&url=fasfasdf)
-![image URL](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white&url=https://www.linkedin.com/in/victor-gabriel-dos-reis-silva-40473b21b/)
 #### Feito com ❤️ por Victor Gabriel 🤙🏽 Entre em contato!
+
+![image](https://img.shields.io/endpoint?color=4A4E69&label=Linkedin&style=social&url=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fvictor-gabriel-dos-reis-silva-40473b21b%2F)
 
 
 
