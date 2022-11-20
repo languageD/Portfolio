@@ -58,7 +58,7 @@ $ npm run backend
 ### Victor Gabriel🚀
 #### Feito com ❤️ por Victor Gabriel 🤙🏽 Entre em contato!
 
-![image](https://www.linkedin.com/in/victor-gabriel-dos-reis-silva-40473b21b/)
+![image](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)
 
 Twitter Badge Linkedin Badge Gmail Badge
 
