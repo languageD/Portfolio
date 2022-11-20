@@ -60,5 +60,9 @@ $ npm run backend
 
 ![image](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=telegram&logoColor=white)
 
-Twitter Badge Linkedin Badge Gmail Badge
+
+
+
+[![iuricode](https://github-readme-stats.vercel.app/api/top-langs/?username=iuricode&hide=html&layout=compact&theme=default)](https://github.com/anuraghazra/github-readme-stats)
+
 
