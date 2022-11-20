@@ -54,8 +54,8 @@ $ npm run backend
 ```
 
 
-Victor Gabriel🚀
-Feito com ❤️ por Victor Gabriel 🤙🏽 Entre em contato!
+## Victor Gabriel🚀
+### Feito com ❤️ por Victor Gabriel 🤙🏽 Entre em contato!
 
 Twitter Badge Linkedin Badge Gmail Badge
 
