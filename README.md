@@ -5,9 +5,7 @@
 
 <h3>Alguns recursos utilizados ✅</h3>
 
-<p align="center">
- <p href="https://pt-br.reactjs.org" target="_blank">ReactJS</p> •
- <p href="https://nodejs.org/en/" target="_blank">NodeJS</p> • 
- <p href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript" target="_blank">Javascript</p> • 
- <p href="https://www.mongodb.com" target="_blank">MongoDB</p> • 
-</p>
+* [Javascript](https://www.w3schools.com/html/)
+* [ReactJS](https://pt-br.reactjs.org)
+* [NodeJS](https://nodejs.org/en/)
+* [MongoDB](https://www.mongodb.com)
