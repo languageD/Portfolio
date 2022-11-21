@@ -5,7 +5,7 @@
   "type": "commonjs",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build --base=./",
     "preview": "vite preview ",
     "backend": "nodemon ./src/backend/express.js ",
     "deploy": "gh-pages -d dist"
