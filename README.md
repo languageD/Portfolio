@@ -1,5 +1,5 @@
 <h1 align="center">Meu porfolio  👨‍💻 </h1>
-<p align="center">Bem vindo ao meu porfolio, onde demonstro algumas habilidades e ideias minhas!</p>
+<p align="center">Bem vindo ao meu portfolio, onde demonstro algumas habilidades e ideias minhas!</p>
 
 ![Badge](https://img.shields.io/badge/ReactJS/NodeJS-4A4E69?style=for-the-badge&logo=ghost)
 
