@@ -67,15 +67,15 @@ function Contatos(){
           <SideHamburger/>
             <form onSubmit={handleFormSubmit}>
               <div className={styles.Field_group}>
-                <input type="text" value={user.name} name='name'  placeholder='Nome'  onChange={gettingInput} className={styles.Inputs} /> <br/>
+                <input type="text" value={user.name} name='name'  placeholder='Nome'  onChange={gettingInput} className={styles.Inputs}  autoComplete="off"/> <br/>
               </div>
 
               
               <div className={styles.field_group}>
-                <input type="text" value={user.email} name='email' placeholder='E-mail' onChange={gettingInput} className={styles.Inputs} />
+                <input type="text" value={user.email} name='email' placeholder='E-mail' onChange={gettingInput} className={styles.Inputs}  autoComplete="off"/>
               </div>
               <div className={styles.field_group}>
-                <input type="text" value={user.messageInput} name='messageInput' placeholder='Sua mensagem' onChange={gettingInput} className={styles.Inputs} />
+                <input type="text" value={user.messageInput} name='messageInput' placeholder='Sua mensagem' onChange={gettingInput} className={styles.Inputs}  autoComplete="off" />
               </div>
               <button type="submit" className={styles.button}>Enviar</button>    
             </form>
